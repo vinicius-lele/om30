@@ -28,7 +28,7 @@
                                    <td><?= esc($paciente['cpf']) ?></td>
                                    <td><?= esc($paciente['cns']) ?></td>
                                    <td>
-                                       <a class="btn btn-primary btn-sm m-1" 
+                                       <a class="btn btn-danger btn-sm m-1" 
                                             href="/pacientes/delete/<?= esc($paciente['id']) ?>">
                                             <i class="bi bi-trash-fill"></i> Excluir
                                         </a>
