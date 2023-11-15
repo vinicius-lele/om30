@@ -126,3 +126,6 @@ nb-configuration.xml
 /phpunit*.xml
 /.phpunit.*.cache
 
+public/assets/img/*
+!public/assets/img/default.jpeg
+
