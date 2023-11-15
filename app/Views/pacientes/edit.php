@@ -7,14 +7,14 @@
 
         <div class="row g-3 ">
             <div class="col">
-                <label for="nome">Nome:</label>
+                <label for="nome">Nome:*</label>
                 <span class="text text-danger">
                     <?= isset(session()->getFlashdata('errors')['nome']) ? 'Campo obrigatório.' : '' ?>
                 </span>
                 <input class="form-control form-control-lg" type="input" name="nome" value="<?= esc($pacientes['nome']) ?>" >
             </div>
             <div class="col">
-                <label for="nome_mae">Nome da Mãe:</label>
+                <label for="nome_mae">Nome da Mãe:*</label>
                 <span class="text text-danger">
                     <?= isset(session()->getFlashdata('errors')['nome_mae']) ? 'Campo obrigatório.' : '' ?>
                 </span>
@@ -24,14 +24,14 @@
 
         <div class="row g-3">
             <div class="col">
-                <label for="data_nascimento">Data de Nascimento:</label>
+                <label for="data_nascimento">Data de Nascimento:*</label>
                 <span class="text text-danger">
                     <?= isset(session()->getFlashdata('errors')['data_nascimento']) ? 'Campo obrigatório.' : '' ?>
                 </span>
                 <input class="form-control form-control-lg" type="date" name="data_nascimento" value="<?= esc($pacientes['data_nascimento']) ?>" >
             </div>
             <div class="col">
-                <label for="cpf">CPF:</label>
+                <label for="cpf">CPF:*</label>
                 <span class="text text-danger">
                     <?= isset(session()->getFlashdata('errors')['cpf']) ? session()->getFlashdata('errors')['cpf'] : '' ?>
                 </span>
@@ -39,7 +39,7 @@
                 name="cpf" value="<?= esc($pacientes['cpf']) ?>" >
             </div>
             <div class="col">
-                <label for="cns">CNS:</label>
+                <label for="cns">CNS:*</label>
                 <span class="text text-danger">
                     <?= isset(session()->getFlashdata('errors')['cns']) ? session()->getFlashdata('errors')['cns']  : '' ?>
                 </span>
@@ -50,7 +50,7 @@
 
         <div class="row g-3">
             <div class="col">
-                <label for="endereco">Endereço:</label>
+                <label for="endereco">Endereço:*</label>
                 <span class="text text-danger">
                     <?= isset(session()->getFlashdata('errors')['endereco']) ? 'Campo obrigatório.' : '' ?>
                 </span>
