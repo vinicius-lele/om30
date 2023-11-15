@@ -1,6 +1,6 @@
 <?php session()->getFlashdata('errors') ?>
 <div class="container bg-light d-flex justify-content-around rounded mt-3" style="padding: 35px;">
-    <form action="/update" method="post" id="atualiza_paciente" class="text-center">
+    <form action="/pacientes/update" method="post" id="atualiza_paciente" class="text-center">
         <h1>EDITAR PACIENTE</h1>
         <?= csrf_field() ?>
         <img src="<?= esc($pacientes['image'] ?? '/assets/img/default.jpeg') ?>" height="150px" width="120px" class="rounded-circle border border-info">

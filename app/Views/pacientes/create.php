@@ -1,7 +1,7 @@
 <?php session()->getFlashdata('errors') ?>
 
 <div class="container bg-light d-flex justify-content-around rounded mt-3" style="padding: 35px;">
-    <form action="/" method="post" id="cadastra_paciente" class="text-center" enctype="multipart/form-data">
+    <form action="/pacientes/store" method="post" id="cadastra_paciente" class="text-center" enctype="multipart/form-data">
         <h1>CADASTRO DE PACIENTE</h1>
         <?= csrf_field() ?>
         <div class="row g-3 ">

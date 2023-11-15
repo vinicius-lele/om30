@@ -5,7 +5,7 @@
            </div>
            <div class="row g">
                <div class="col">
-                   <a class="btn btn-secondary" href="/new">Cadastrar Paciente</a>
+                   <a class="btn btn-secondary" href="/pacientes/new">Cadastrar Paciente</a>
                </div>
            </div>
        </div>
@@ -29,11 +29,11 @@
                                    <td><?= esc($paciente['cns']) ?></td>
                                    <td>
                                        <a class="btn btn-primary btn-sm m-1" 
-                                            href="/<?= esc($paciente['id']) ?>">
+                                            href="/pacientes/delete/<?= esc($paciente['id']) ?>">
                                             <i class="bi bi-trash-fill"></i> Excluir
                                         </a>
                                        <a class="btn btn-primary btn-sm m-1" 
-                                            href="/edit/<?= esc($paciente['id']) ?>"
+                                            href="/pacientes/edit/<?= esc($paciente['id']) ?>"
                                             ><i class="bi bi-pencil-fill"></i> Editar
                                        </a>
                                    </td>
